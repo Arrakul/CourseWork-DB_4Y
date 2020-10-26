@@ -3,15 +3,15 @@ using System.Collections.Generic;
 
 namespace CrmBL.Model
 {
-    class Check
+    public class Chek
     {
-        public int CheckId { get; set; }
+        public int ChekId { get; set; }
 
         public int CustomerId { get; set; }
         public virtual Customer Customer { get; set; }
 
         public int SellerId { get; set; }
-        public virtual Seller Seller { get; set; }        
+        public virtual Seller Seller { get; set; }
 
         public virtual ICollection<Sell> Sells { get; set; }
 
@@ -19,7 +19,7 @@ namespace CrmBL.Model
 
         public override string ToString()
         {
-            return $"№{CheckId} от {Created.ToString("dd.MM.yy hh:mm:ss")}";
+            return $"№{ChekId} от {Created.ToString("dd.MM.yy hh:mm:ss")}";
         }
     }
 }

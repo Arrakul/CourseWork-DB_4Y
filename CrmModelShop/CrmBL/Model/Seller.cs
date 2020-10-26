@@ -2,12 +2,12 @@
 
 namespace CrmBL.Model
 {
-    class Seller
+    public class Seller
     {
         public int SellerId { get; set; }
         public string Name { get; set; }
 
-        public virtual ICollection<Check> Checks { get; set; }
+        public virtual ICollection<Chek> Cheks { get; set; }
 
         public override string ToString()
         {

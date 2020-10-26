@@ -2,12 +2,12 @@
 
 namespace CrmBL.Model
 {
-    class Customer
+    public class Customer
     {
         public int CustomerId { get; set; }
         public string Name { get; set; }
 
-        public virtual ICollection<Check> Checks { get; set; }
+        public virtual ICollection<Chek> Cheks { get; set; }
 
         public override string ToString()
         {
