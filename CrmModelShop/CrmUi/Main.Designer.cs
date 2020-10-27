@@ -34,8 +34,9 @@
             this.SellerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ChekToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.добавитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SellerAddToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CustomerAddToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ProductAddToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +63,8 @@
             // 
             // ProductToolStripMenuItem
             // 
+            this.ProductToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ProductAddToolStripMenuItem1});
             this.ProductToolStripMenuItem.Name = "ProductToolStripMenuItem";
             this.ProductToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ProductToolStripMenuItem.Text = "Товар";
@@ -70,7 +73,7 @@
             // SellerToolStripMenuItem
             // 
             this.SellerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.добавитьToolStripMenuItem});
+            this.SellerAddToolStripMenuItem});
             this.SellerToolStripMenuItem.Name = "SellerToolStripMenuItem";
             this.SellerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.SellerToolStripMenuItem.Text = "Продавец";
@@ -92,11 +95,12 @@
             this.ChekToolStripMenuItem.Text = "Чек";
             this.ChekToolStripMenuItem.Click += new System.EventHandler(this.ChekToolStripMenuItem_Click);
             // 
-            // добавитьToolStripMenuItem
+            // SellerAddToolStripMenuItem
             // 
-            this.добавитьToolStripMenuItem.Name = "добавитьToolStripMenuItem";
-            this.добавитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.добавитьToolStripMenuItem.Text = "Добавить";
+            this.SellerAddToolStripMenuItem.Name = "SellerAddToolStripMenuItem";
+            this.SellerAddToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.SellerAddToolStripMenuItem.Text = "Добавить";
+            this.SellerAddToolStripMenuItem.Click += new System.EventHandler(this.SellerAddToolStripMenuItem_Click);
             // 
             // CustomerAddToolStripMenuItem1
             // 
@@ -104,6 +108,13 @@
             this.CustomerAddToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.CustomerAddToolStripMenuItem1.Text = "Добавить";
             this.CustomerAddToolStripMenuItem1.Click += new System.EventHandler(this.CustomerAddToolStripMenuItem1_Click);
+            // 
+            // ProductAddToolStripMenuItem1
+            // 
+            this.ProductAddToolStripMenuItem1.Name = "ProductAddToolStripMenuItem1";
+            this.ProductAddToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.ProductAddToolStripMenuItem1.Text = "Добавить";
+            this.ProductAddToolStripMenuItem1.Click += new System.EventHandler(this.ProductAddToolStripMenuItem1_Click);
             // 
             // Main
             // 
@@ -129,8 +140,9 @@
         private System.Windows.Forms.ToolStripMenuItem SellerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem CustomerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ChekToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem добавитьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SellerAddToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem CustomerAddToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ProductAddToolStripMenuItem1;
     }
 }
 

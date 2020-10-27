@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using CrmBL.Model;
 
@@ -20,13 +13,18 @@ namespace CrmUi
             InitializeComponent();
         }
 
+        public CustomerForm(Customer customer) : this()
+        {
+            Customer = customer;
+            textBox1.Text = Customer.Name;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            Customer = new Customer()
-            {
-                Name = textBox1.Text
-            };
+            var customer = Customer ?? new Customer();
+            customer.Name = textBox1.Text;
 
+            Customer = customer;
             Close();
         }
     }
