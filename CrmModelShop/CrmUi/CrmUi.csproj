@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E8D4D6BE-7AE9-4890-9DF6-ADB10D0D439A}</ProjectGuid>
+    <ProjectGuid>{3AA20A7B-6741-4B40-8FB4-5B204F41104D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>CrmUi</RootNamespace>
     <AssemblyName>CrmUi</AssemblyName>
@@ -110,7 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CrmBL\CrmBL.csproj">
-      <Project>{65192c8b-6b1c-4e26-b26c-62000f936f94}</Project>
+      <Project>{38bcfc16-ecbc-43dc-8f1d-0e451b219449}</Project>
       <Name>CrmBL</Name>
     </ProjectReference>
   </ItemGroup>

@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{65192C8B-6B1C-4E26-B26C-62000F936F94}</ProjectGuid>
+    <ProjectGuid>{38BCFC16-ECBC-43DC-8F1D-0E451B219449}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CrmBL</RootNamespace>
@@ -51,7 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Chek.cs" />
     <Compile Include="Model\CrmContext.cs" />
     <Compile Include="Model\Customer.cs" />

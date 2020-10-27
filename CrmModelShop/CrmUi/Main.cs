@@ -45,7 +45,7 @@ namespace CrmUi
             catalogCheck.Show();
         }
 
-        private void CustomerAddToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CustomerAddToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             var form = new CustomerForm();
             if (form.ShowDialog() == DialogResult.OK)

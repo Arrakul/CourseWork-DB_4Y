@@ -20,11 +20,6 @@ namespace CrmUi
             InitializeComponent();
         }
 
-        private void CustomerForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Customer = new Customer()
