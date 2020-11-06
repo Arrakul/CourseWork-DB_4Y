@@ -58,7 +58,7 @@ namespace CrmBL.Model
                     ProductId = Products.Count,
                     Name = GetRandomString(),
                     Count = rnd.Next(10, 100),
-                    Price = Convert.ToDecimal(rnd.Next(5, 100000) + rnd.NextDouble())
+                    Price = Convert.ToDecimal(rnd.Next(5, 10000) + rnd.NextDouble())
                 };
 
                 Products.Add(product);
