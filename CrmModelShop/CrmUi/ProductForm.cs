@@ -15,7 +15,7 @@ namespace CrmUi
 
         public ProductForm(Product product) : this()
         {
-            Product = product;
+            Product = product ?? new Product();
 
             textBox1.Text = Product.Name;
             numericUpDown1.Value = Product.Price;
@@ -29,13 +29,12 @@ namespace CrmUi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var product = Product ?? new Product();
+            Product = Product ?? new Product();
 
-            product.Name = textBox1.Text;
-            product.Price = numericUpDown1.Value;
-            product.Count = (int)numericUpDown2.Value;
+            Product.Name = textBox1.Text;
+            Product.Price = numericUpDown1.Value;
+            Product.Count = (int)numericUpDown2.Value;
 
-            Product = product;
             Close();
         }
     }
