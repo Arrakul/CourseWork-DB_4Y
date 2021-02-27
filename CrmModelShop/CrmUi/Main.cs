@@ -27,25 +27,25 @@ namespace CrmUi
 
         private void ProductToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var catalogProduct = new Catalog<Product>(db.Products, db);
+            var catalogProduct = new Catalog<Product>(db.Products, db, this);
             catalogProduct.Show();
         }
 
         private void SellerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var catalogSeller = new Catalog<Seller>(db.Sellers, db);
+            var catalogSeller = new Catalog<Seller>(db.Sellers, db, this);
             catalogSeller.Show();
         }
 
         private void CustomerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var catalogCustomer = new Catalog<Customer>(db.Customers, db);
+            var catalogCustomer = new Catalog<Customer>(db.Customers, db, this);
             catalogCustomer.Show();
         }
 
         private void ChekToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var catalogCheck = new Catalog<Chek>(db.Cheks, db);
+            var catalogCheck = new Catalog<Chek>(db.Cheks, db, this);
             catalogCheck.Show();
         }
 
@@ -95,6 +95,12 @@ namespace CrmUi
                     UpdateLists();
                 });
             });
+        }
+
+        public void UpdateListBox()
+        {
+            listBox1.Items.Clear();
+            listBox1.Items.AddRange(db.Products.ToArray());
         }
 
         private void listBox1_DoubleClick(object sender, EventArgs e)
